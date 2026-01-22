@@ -110,7 +110,7 @@ Dieser Extra-Einkauf kostet **€ 7,-**.
     )
 
 # =========================================================
-# AUFGABE 03  (Break-Even → BROOKIE)
+# AUFGABE 03
 # =========================================================
 def aufgabe03():
     require_password("aufgabe03", ["GLAMORA"])
@@ -141,14 +141,14 @@ Gegeben sind:
         r"""
 **Aufgabe:**  
 1. Stelle die Gewinnfunktion \(G(x)=E(x)-K(x)\) auf.  
-2. Ermittle den **Break-Even-Point** (Nullstelle von \(G(x)\)) **auf 3 Nachkommastellen genau**.
+2. Ermittle den **Break-Even-Point** **auf 3 Nachkommastellen genau**.
 
 ---
 
 **Codierung:**
 - Entferne das Komma.  
 - Teile die Ziffern im Muster **1–2–2–2–2–1–1**.  
-- Wandle die Zahlen mit \(A=1,\,B=2,\,\dots\) in Buchstaben um.
+- Wandle die Zahlen mit \(A=1,\dots\) in Buchstaben um.
 
 👉 Das entstehende Wort verrät euch, bei welchem **Junior-Company-Stand** der nächste Tag ist –  
 und ist gleichzeitig das **Passwort** für die nächste Aufgabe.
@@ -170,10 +170,9 @@ def aufgabe04():
 Aktuell finden die Rennen in **Kitzbühel** statt – manche Pisten sind steil, manche weniger.  
 … aber was ist mit **unserer Schultreppe**?
 
-**Bestimme die Steigung** der Treppe im Hauptgebäude vom **2. Stock in den 3. Stock**.
+**Bestimme die Steigung** der Treppe vom **2. in den 3. Stock**.
 
-**Tipp:** Steigung \(=\frac{\Delta y}{\Delta x}\).  
-Eine einzelne Stufe erinnert sehr an ein Steigungsdreieck.
+**Tipp:** Steigung \(=\frac{\Delta y}{\Delta x}\).
 """
     )
 
@@ -182,12 +181,12 @@ Eine einzelne Stufe erinnert sehr an ein Steigungsdreieck.
     st.markdown(
         """
 **Vergleichswerte:**
-- Ganserlhang: Steigung **0,35**  
-- Planai (Zielhang): Steigung **0,45**  
-- Streif (Mausefalle): Steigung **0,85**
+- Ganserlhang: **0,35**  
+- Planai (Zielhang): **0,45**  
+- Streif (Mausefalle): **0,85**
 
-**→ Welche Piste passt am besten zur Steigung eurer Treppe?**  
-**→ In welchem Bundesland liegt diese Piste?**
+**→ Welche Piste passt am besten?**  
+**→ In welchem Bundesland liegt sie?**
 """
     )
 
@@ -197,18 +196,18 @@ Eine einzelne Stufe erinnert sehr an ein Steigungsdreieck.
         """
 **Codierung:**
 1. Schreibe das **Bundesland** auf.  
-2. Nimm nur die Buchstaben auf den **geraden Stellen** (2., 4., 6., …).  
-3. Wandle diese Buchstaben in **Zahlen** um.  
-4. **Addiere** die Zahlen.  
-5. Wandle die Ziffern des Ergebnisses wieder in **Buchstaben** um.
+2. Nimm die Buchstaben auf den **geraden Stellen**.  
+3. Wandle Buchstaben → Zahlen.  
+4. Addiere.  
+5. Wandle das Ergebnis wieder in Buchstaben um.
 
-Mit welchen **Ferien oder Feiertagen** wird dieses Wort am häufigsten in Verbindung gebracht?  
+Mit welchen **Ferien/Feiertagen** wird dieses Wort am häufigsten in Verbindung gebracht?  
 👉 Das ist das **letzte Passwort**.
 """
     )
 
 # =========================================================
-# AUFGABE 05 (Finale)
+# AUFGABE 05 (Finale – angepasst)
 # =========================================================
 def aufgabe05():
     require_password("aufgabe05", ["OSTERN"])
@@ -220,8 +219,14 @@ def aufgabe05():
     if st.button("CONGRATS"):
         if names.strip():
             st.balloons()
-            st.success(f"CONGRATS, {names}!")
-            st.markdown("📸 **Mache einen Screenshot und gib diesen bei der Aufgabe in Teams ab.**")
+            st.success(
+                f"CONGRATS, {names}!\n\n"
+                "Ihr habt den Preis gewonnen:\n"
+                "**1× Hausübungsgutschein (pro Person)** 🎉"
+            )
+            st.markdown(
+                "📸 **Mache einen Screenshot und gib diesen bei der Aufgabe in Teams ab.**"
+            )
         else:
             st.warning("Bitte zuerst Namen eingeben.")
 
