@@ -150,7 +150,8 @@ Gegeben sind:
 - Teile die Ziffern im Muster **1–2–2–2–2–1–1**.  
 - Wandle die Zahlen mit \(A=1,\,B=2,\,\dots\) in Buchstaben um.
 
-👉 Das entstehende Wort ist das Passwort für die nächste Aufgabe.
+👉 Das entstehende Wort verrät euch, bei welchem **Junior-Company-Stand** der nächste Tag ist –  
+und ist gleichzeitig das **Passwort** für die nächste Aufgabe.
 """
     )
 
