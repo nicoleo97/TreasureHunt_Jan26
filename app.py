@@ -110,7 +110,7 @@ Dieser Extra-Einkauf kostet **€ 7,-**.
     )
 
 # =========================================================
-# AUFGABE 03  (BROOKIE-Task)
+# AUFGABE 03  (Break-Even → BROOKIE)
 # =========================================================
 def aufgabe03():
     require_password("aufgabe03", ["GLAMORA"])
@@ -126,7 +126,7 @@ Ein interstellarer Konzern produziert **Energiezellen für Sprungantriebe**.
 Gegeben sind:
 - **Fixkosten:** 436 366 720,07 Credits  
 - **Variable Kosten:** 4 Credits pro Energiezelle  
-- **Erlös pro Zelle:** 6 Credits  
+- **Erlös pro Energiezelle:** 6 Credits  
 - **Startbonus:** 63 696,88 Credits
 """
     )
@@ -141,16 +141,16 @@ Gegeben sind:
         r"""
 **Aufgabe:**  
 1. Stelle die Gewinnfunktion \(G(x)=E(x)-K(x)\) auf.  
-2. Ermittle den **Break-Even-Point** auf **3 Nachkommastellen** genau.
+2. Ermittle den **Break-Even-Point** (Nullstelle von \(G(x)\)) **auf 3 Nachkommastellen genau**.
 
 ---
 
-**Weiterverarbeitung:**
+**Codierung:**
 - Entferne das Komma.  
-- Teile die Ziffern im Muster **1–2–2–2–1–1**.  
-- Wandle Zahlen → Buchstaben um.
+- Teile die Ziffern im Muster **1–2–2–2–2–1–1**.  
+- Wandle die Zahlen mit \(A=1,\,B=2,\,\dots\) in Buchstaben um.
 
-👉 Am Ende entsteht das Codewort für die nächste Aufgabe.
+👉 Das entstehende Wort ist das Passwort für die nächste Aufgabe.
 """
     )
 
@@ -166,11 +166,13 @@ def aufgabe04():
 
     st.markdown(
         r"""
-Aktuell finden die Rennen in **Kitzbühel** statt – doch was ist mit **unserer Schultreppe**?
+Aktuell finden die Rennen in **Kitzbühel** statt – manche Pisten sind steil, manche weniger.  
+… aber was ist mit **unserer Schultreppe**?
 
-**Bestimme die Steigung** der Treppe vom **2. in den 3. Stock**.
+**Bestimme die Steigung** der Treppe im Hauptgebäude vom **2. Stock in den 3. Stock**.
 
-**Tipp:** Steigung \(=\frac{\Delta y}{\Delta x}\)
+**Tipp:** Steigung \(=\frac{\Delta y}{\Delta x}\).  
+Eine einzelne Stufe erinnert sehr an ein Steigungsdreieck.
 """
     )
 
@@ -179,12 +181,12 @@ Aktuell finden die Rennen in **Kitzbühel** statt – doch was ist mit **unserer
     st.markdown(
         """
 **Vergleichswerte:**
-- Ganserlhang: 0,35  
-- Planai (Zielhang): 0,45  
-- Streif (Mausefalle): 0,85  
+- Ganserlhang: Steigung **0,35**  
+- Planai (Zielhang): Steigung **0,45**  
+- Streif (Mausefalle): Steigung **0,85**
 
-**→ Welche Piste passt am besten?**  
-**→ In welchem Bundesland liegt sie?**
+**→ Welche Piste passt am besten zur Steigung eurer Treppe?**  
+**→ In welchem Bundesland liegt diese Piste?**
 """
     )
 
@@ -193,13 +195,13 @@ Aktuell finden die Rennen in **Kitzbühel** statt – doch was ist mit **unserer
     st.markdown(
         """
 **Codierung:**
-1. Schreibe das Bundesland auf.  
-2. Nimm die Buchstaben auf den **geraden Stellen**.  
-3. Wandle Buchstaben → Zahlen.  
-4. Addiere.  
-5. Wandle das Ergebnis wieder in Buchstaben um.
+1. Schreibe das **Bundesland** auf.  
+2. Nimm nur die Buchstaben auf den **geraden Stellen** (2., 4., 6., …).  
+3. Wandle diese Buchstaben in **Zahlen** um.  
+4. **Addiere** die Zahlen.  
+5. Wandle die Ziffern des Ergebnisses wieder in **Buchstaben** um.
 
-Mit welchen **Ferien/Feiertagen** verbindet man dieses Wort am häufigsten?  
+Mit welchen **Ferien oder Feiertagen** wird dieses Wort am häufigsten in Verbindung gebracht?  
 👉 Das ist das **letzte Passwort**.
 """
     )
@@ -218,7 +220,7 @@ def aufgabe05():
         if names.strip():
             st.balloons()
             st.success(f"CONGRATS, {names}!")
-            st.markdown("📸 **Screenshot machen und in Teams abgeben.**")
+            st.markdown("📸 **Mache einen Screenshot und gib diesen bei der Aufgabe in Teams ab.**")
         else:
             st.warning("Bitte zuerst Namen eingeben.")
 
