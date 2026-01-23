@@ -176,10 +176,13 @@ Aktuell finden die Rennen in **Kitzbühel** statt – manche Pisten sind steil, 
 """
     )
 
-    st.button("Fortsetzung")
+    # Schritt 1 -> Schritt 2 einblenden
+    if st.button("Fortsetzung", key="a04_continue_1"):
+        st.session_state["a04_step"] = 2
 
-    st.markdown(
-        """
+    if st.session_state.get("a04_step", 1) >= 2:
+        st.markdown(
+            """
 **Vergleichswerte:**
 - Ganserlhang: **0,35**  
 - Planai (Zielhang): **0,45**  
@@ -188,15 +191,17 @@ Aktuell finden die Rennen in **Kitzbühel** statt – manche Pisten sind steil, 
 **→ Welche Piste passt am besten?**  
 **→ In welchem Bundesland liegt sie?**
 """
-    )
+        )
 
-    st.button("Fortsetzung")
+        if st.button("Fortsetzung", key="a04_continue_2"):
+            st.session_state["a04_step"] = 3
 
-    st.markdown(
-        """
+    if st.session_state.get("a04_step", 1) >= 3:
+        st.markdown(
+            """
 **Codierung:**
 1. Schreibe das **Bundesland** auf.  
-2. Nimm die Buchstaben auf den **geraden Stellen**.  
+2. Nimm die Buchstaben auf den **geraden Stellen** (2., 4., 6., …).  
 3. Wandle Buchstaben → Zahlen.  
 4. Addiere.  
 5. Wandle das Ergebnis wieder in Buchstaben um.
@@ -204,7 +209,8 @@ Aktuell finden die Rennen in **Kitzbühel** statt – manche Pisten sind steil, 
 Mit welchen **Ferien/Feiertagen** wird dieses Wort am häufigsten in Verbindung gebracht?  
 👉 Das ist das **letzte Passwort**.
 """
-    )
+        )
+
 
 # =========================================================
 # AUFGABE 05 (Finale – angepasst)
