@@ -207,7 +207,7 @@ Aktuell finden die Rennen in **Kitzbühel** statt – manche Pisten sind steil, 
 5. Wandle das Ergebnis wieder in Buchstaben um.
 
 Mit welchen **Ferien/Feiertagen** wird dieses Wort am häufigsten in Verbindung gebracht?  
-👉 Das ist das **letzte Passwort**.
+👉 Das ist das **letzte Passwort**. Scanne den NFC Tag beim letzten Fragezeichen bei den 3D-Drucken und gib das finale Passwort sein!
 """
         )
 
